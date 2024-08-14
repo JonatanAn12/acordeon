@@ -10,22 +10,28 @@ body {
 
 #acordeon {
     display: flex;
-    background: linear-gradient(45deg, #ffd700, #ff6347);
+    background: linear-gradient(45deg, #c20303, #525151);
     border-radius: 20px;
     padding: 30px;
     box-shadow: 0 0 30px rgba(0,0,0,0.3);
+}   
+
+.caja-toraxica {
+    width: 70px;
+    background-color: #808080;
+    margin: 0 15px;
 }
 
 #fuelle {
-    width: 60px;
+    width: 300px;
     background: repeating-linear-gradient(
         45deg,
-        #808080,
-        #808080 10px,
-        #a9a9a9 10px,
-        #a9a9a9 20px
+        #000000,
+        #131212 10px,
+        #1a1818 10px,
+        #2b2525 20px
     );
-    margin: 0 20px;
+    margin: 0 ;
 }
 
 .teclado {
@@ -84,12 +90,10 @@ button:active, button.active {
     background-color: #ffff00;
 }
 
-/* Estilo adicional para los botones activos */
 button.active {
     box-shadow: 0 0 10px #ffff00;
 }
 
-/* Estilos responsivos */
 @media (max-width: 768px) {
     #acordeon {
         flex-direction: column;
