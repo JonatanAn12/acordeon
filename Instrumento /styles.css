@@ -19,7 +19,7 @@ body {
 }   
 
 .caja-toraxica {
-    width: 200px;
+    width: 120px;
     background: repeating-linear-gradient(
         45deg,
         #2c2828 5px,
@@ -30,16 +30,31 @@ body {
 }
 
 #fuelle {
-    width: 300px;
+    width: 600px;
     background: repeating-linear-gradient(
-        45deg,
+        to right,
         #000000,
         #131212 10px,
         #1a1818 10px,
-        #2b2525 20px
+        #2b2525 20px,
+        #131212 10px
     );
+    background-repeat: repeat-x;
     margin: 0 ;
-}
+}   
+    #fuelle::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100px; /* Ajusta el tamaño según sea necesario */
+        height: 100px; /* Ajusta el tamaño según sea necesario */
+        background-color: rgba(226, 226, 10, 0.7); /* Color de la figura con opacidad */
+        position: relative;
+        clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+            /* Crea una estrella de 4 lados */
+        transform: translate(-10%, -60%); /* Centra la figura */
+    }
 
 .teclado {
     display: flex;
